@@ -1,0 +1,47 @@
+.bg-light {
+    background: #fff !important;
+}
+
+.navBar-Link-ml{
+    margin-left: 72px;
+}
+@media screen and (max-width:600px ){
+    .navBar-Link-ml{
+        margin-left: 10px;
+    }
+}
+.navbar-nav
+.nav-item
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+}
+.book-btn{
+    width: 170px;
+    height: 54px;
+    border-radius: 27px;
+    border: 2px solid #f66f4d;
+    color: #f66f4d;
+}
+
+.book-btn:hover{
+    background: #fff;
+    border: 2px solid #f66f4d;
+    color: #f66f4d;
+}
+
+/* Banner Area */
+.banner_title{
+    width: 577px;
+    height: 258px;
+    font-family: sans-serif;
+    line-height: 86px;
+    font-size: 84px;
+    font-weight: bold;
+    color: #2d3134;
+}
+.banner_text{
+    width: 500px;
+    height: 56px;
+    line-height: 28px;font-size: 18px;
+    color: #5b5f62;
+}
