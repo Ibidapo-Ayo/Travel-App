@@ -62,7 +62,7 @@ function Banner() {
                   <div className="col-2">
                     <div
                       className={
-                        text.length || date.length <= 0
+                        text.length <= 0
                           ? "search-icon not-allowed"
                           : "search-icon cursor-pointer"
                       }
