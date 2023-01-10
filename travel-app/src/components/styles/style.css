@@ -89,3 +89,11 @@
 .not-allowed{
     cursor: not-allowed;
 }
+
+/* Slider Area */
+
+.categories{
+    font-weight: bold;
+    font-size: 36px;
+
+}
