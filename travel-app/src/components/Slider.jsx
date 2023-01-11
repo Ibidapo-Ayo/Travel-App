@@ -10,12 +10,14 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
+import { CategoryImg } from './data/CategoryImg';
+
 
 function Slider() {
     return (
         <>
-        <div className="container">
-        <h1 className="categories">Categories</h1>
+        <div className="container mt-5">
+        <h1 className="categories mb-5">Categories</h1>
         <Swiper
           slidesPerView={4}
           spaceBetween={10}
@@ -26,17 +28,13 @@ function Slider() {
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide>
-              <img src="../../src/assets/images/categories/category_1.jpg" alt=""/>
+          {
+            CategoryImg.map((imgUrl) =>(
+            <SwiperSlide>
+              <img src={imgUrl.imgUrl} alt=""/>
           </SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_2.png" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_3.jpg" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_4.jpg" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_5.png" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_6.jpg" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_1.jpg" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_8.png" alt=""/></SwiperSlide>
-          <SwiperSlide> <img src="../../src/assets/images/categories/category_9.png" alt=""/></SwiperSlide>
+            ))}
+        
         </Swiper>
         </div>
        
