@@ -1,0 +1,32 @@
+@media screen and (max-width:599px){
+    .column-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    .column-1 .banner_title{
+       text-align: center;
+       font-size: 50px;
+    }
+    .column-1 .banner_text{
+        text-align: center;
+    }
+    .location{
+        width: 370px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px 5px 20px;
+    }
+    .location .search-icon{
+        width: 46px;
+        height: 46px;
+    }
+    .column-1 img{
+        width: 300px;
+        margin-top: 20px;
+    }
+}
