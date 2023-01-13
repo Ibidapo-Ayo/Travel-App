@@ -16,7 +16,7 @@ import { CategoryImg } from './data/CategoryImg';
 function Slider() {
     return (
         <>
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
         <h1 className="categories mb-5">Categories</h1>
         <Swiper
           slidesPerView={4}
@@ -29,8 +29,8 @@ function Slider() {
           className="mySwiper"
         >
           {
-            CategoryImg.map((imgUrl) =>(
-            <SwiperSlide>
+            CategoryImg.map((imgUrl, index) =>(
+            <SwiperSlide key={index}>
               <img src={imgUrl.imgUrl} alt=""/>
           </SwiperSlide>
             ))}

@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Slider from './Slider';
 import "../../src/index.css";
 import "./styles/style.css";
+import "./styles/@media.css"
 
 function Main() {
     return (

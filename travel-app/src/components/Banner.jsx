@@ -33,7 +33,7 @@ function Banner() {
       <section className="banner-name">
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-6 column-1">
               <h1 className="banner_title">Discover the Best Lovely Places</h1>
               <p className="banner_text">
                 Plan and book your perfect trip with expert advice, travel tips,
@@ -72,24 +72,10 @@ function Banner() {
                     </div>
                   </div>
                 </div>
-                {/* <div class="row">
-                  <div class="col-5">
-                    <h3 className="location_title">Where</h3>
-                    <div className="d-flex justify-content-between w-100">
-                      <div className="">
-                        <input type="text" className="location_input" />
-                      </div>
-                      <div className="">
-                        <FaMapMarkerAlt />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">One of three columns</div>
-                  <div class="col-3">One of three columns</div>
-                </div> */}
+              
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 column-1">
               <img src="../../src/assets/images/landing_image.png" />
             </div>
           </div>

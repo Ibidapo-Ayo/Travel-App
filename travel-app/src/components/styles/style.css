@@ -33,19 +33,13 @@
 /* Banner Area */
 
 .banner_title {
-    width: 577px;
-    height: 258px;
     font-family: sans-serif;
-    line-height: 86px;
     font-size: 84px;
     font-weight: bold;
     color: #2d3134;
 }
 
 .banner_text {
-    width: 500px;
-    height: 56px;
-    line-height: 28px;
     font-size: 18px;
     color: #5b5f62;
 }
@@ -88,6 +82,9 @@
 }
 .not-allowed{
     cursor: not-allowed;
+}
+.column-1 img{
+    width: auto;
 }
 
 /* Slider Area */
