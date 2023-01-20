@@ -1,7 +1,7 @@
-import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
+import { FaSearch, FaMapMarkerAlt, FaTelegramPlane } from "react-icons/fa";
 import React, { useState } from "react";
+import  Typical  from "react-typical";
 function Banner() {
-    
   const [text, setText] = useState("");
   const [date, setDate] = useState("");
   const searchResult = e => {
@@ -12,29 +12,36 @@ function Banner() {
   };
   const Travel = [
     {
-      title: "Where",
-      placeholder: "where are you going",
+      title: "From",
+      placeholder: "where are you coming from?",
       icon: <FaMapMarkerAlt />,
       type: "text",
       value: text,
       onChange: searchResult
     },
     {
-      title: "Date",
-      type: "date",
+      title: "To",
+      type: "text",
+      icon: <FaTelegramPlane />,
       value: date,
+      placeholder: "where are you going?",
       onChange: searchResult2
     }
   ];
 
-  
   return (
     <div>
       <section className="banner-name">
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
             <div className="col-md-6 column-1">
-              <h1 className="banner_title">Discover the Best Lovely Places</h1>
+              <h1 className="banner_title">
+                {" "}
+                <Typical
+                  steps={["Welcome to Salty 🚀", 4000, "The best travel site 🚀 ", 4000,"Travel round...", 4000, "The 🌎 in a sec 😍", 4000]}
+                  loop={Infinity}
+                />
+              </h1>
               <p className="banner_text">
                 Plan and book your perfect trip with expert advice, travel tips,
                 destination information and inspiration from us.
@@ -52,10 +59,10 @@ function Banner() {
                             value={travel.value}
                             onChange={travel.onChange}
                             className="location_input"
-                            placeholder="Input location"
+                            placeholder={travel.placeholder}
                           />
                         </div>
-                        <div className="">{travel.icon}</div>
+                        <div className="icon">{travel.icon}</div>
                       </div>
                     </div>
                   ))}
@@ -67,12 +74,10 @@ function Banner() {
                           : "search-icon cursor-pointer"
                       }
                     >
-                   
                       <FaSearch size={20} color="#fff" />
                     </div>
                   </div>
                 </div>
-              
               </div>
             </div>
             <div className="col-md-6 column-1">
