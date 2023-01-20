@@ -3,6 +3,8 @@ import "../../src/index.css";
 import "./styles/style.css";
 import { FaTelegramPlane, FaMapMarkerAlt } from "react-icons/fa";
 
+import {NavBarUrl} from './data/NavbarUrl'
+
 function NavBar() {
   return (
     <>
@@ -24,7 +26,14 @@ function NavBar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 navBar-Link-ml">
-            <li className="nav-item">
+          {NavBarUrl.map((links, index) => (
+             <li className="nav-item" key={links.id}>
+             <a className="nav-link" aria-current="page" href="#">
+             {links.urlLink}
+             </a>
+           </li>
+          ))}
+            {/* <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">
                 Home
               </a>
@@ -49,7 +58,7 @@ function NavBar() {
               <a className="nav-link" href="#">
                 Blog
               </a>
-            </li>
+            </li> */}
           </ul>
           <form className="d-flex">
             <button className="btn book-btn" type="submit">

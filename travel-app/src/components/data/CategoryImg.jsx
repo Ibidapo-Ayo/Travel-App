@@ -1,6 +1,7 @@
 export const CategoryImg = [
     {
-      imgUrl: "../../src/assets/images/categories/category_1.jpg"
+      imgUrl: "../../src/assets/images/categories/category_1.jpg",
+      text: "Temple"
     },
     {
       imgUrl: "../../src/assets/images/categories/category_2.png"
