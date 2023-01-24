@@ -32,7 +32,9 @@
    .mobile-none{
        display: none;
    }
-   
-    
+   .mobile-display{
+       display: flex;
+       flex-direction: column-reverse !important;
+   }
    
 }

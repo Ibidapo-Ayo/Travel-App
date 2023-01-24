@@ -33,7 +33,7 @@ function Banner() {
     <div>
       <section className="banner-name">
         <div className="container">
-          <div className="row d-flex justify-content-between align-items-center">
+          <div className="row d-flex justify-content-between align-items-center mobile-display">
             <div className="col-md-6 column-1">
               <h1 className="banner_title">
                 {" "}

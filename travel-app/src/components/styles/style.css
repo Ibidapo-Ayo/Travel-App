@@ -88,7 +88,7 @@ html{
     cursor: not-allowed;
 }
 .column-1 img{
-    width: auto;
+    width: 500px;
 }
 .icon{
     color: #f66f4d;
